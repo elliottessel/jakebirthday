@@ -1,15 +1,17 @@
-import { Text, View } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import home from './screens/home';
+import gallery from './screens/gallery';
+import message from './screens/message';
 
-export default function Index() {
+const Tab = createBottomTabNavigator();
+
+export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Happy Birthday Jakob</Text>
-    </View>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={home} />
+        <Tab.Screen name="Gallery" component={gallery} />
+        <Tab.Screen name="Message" component={message} />
+      </Tab.Navigator>
   );
 }
