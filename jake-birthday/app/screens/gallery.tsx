@@ -1,4 +1,5 @@
-import { FlatList, Image, StyleSheet, Dimensions, View } from 'react-native';
+import { FlatList, Image, Dimensions, Modal, TouchableOpacity, View, StyleSheet } from 'react-native';
+import { useState } from 'react';
 
 const photos = [
         { id: '1', source: require('../../assets/images/IMG_0472.png') },
@@ -18,19 +19,45 @@ const photos = [
 const size = Dimensions.get('window').width / 2 - 6;
 
 export default function Gallery() {
-  return (
-    <FlatList
-      data={photos}
-      keyExtractor={(item) => item.id}
-      numColumns={2}
-      contentContainerStyle={styles.grid}
-      renderItem={({ item }) => (
-        <Image source={item.source} style={{ width: size, height: size, margin: 2 }} />
-      )}
-    />
-  );
-}
-
-const styles = StyleSheet.create({
-  grid: { padding: 4 },
-});
+        const [selected, setSelected] = useState<any>(null);
+      
+        return (
+          <View style={{ flex: 1 }}>
+            <FlatList
+              data={photos}
+              keyExtractor={(item) => item.id}
+              numColumns={2}
+              contentContainerStyle={styles.grid}
+              renderItem={({ item }) => (
+                <TouchableOpacity onPress={() => setSelected(item.source)}>
+                  <Image source={item.source} style={{ width: size, height: size, margin: 2 }} />
+                </TouchableOpacity>
+              )}
+            />
+      
+            <Modal visible={!!selected} transparent animationType="fade">
+              <TouchableOpacity style={styles.modalBg} onPress={() => setSelected(null)}>
+                <Image
+                  source={selected}
+                  style={styles.fullImage}
+                  resizeMode="contain"
+                />
+              </TouchableOpacity>
+            </Modal>
+          </View>
+        );
+      }
+      
+      const styles = StyleSheet.create({
+        grid: { padding: 4 },
+        modalBg: {
+          flex: 1,
+          backgroundColor: 'rgba(0,0,0,0.9)',
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+        fullImage: {
+          width: Dimensions.get('window').width,
+          height: Dimensions.get('window').height * 0.85,
+        },
+      });
