@@ -1,17 +1,17 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import home from './screens/home';
-import gallery from './screens/gallery';
-import message from './screens/message';
+import Home from './screens/home';
+import Gallery from './screens/gallery';
+import Message from './screens/message';
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
       <Tab.Navigator>
-        <Tab.Screen name="Home" component={home} />
-        <Tab.Screen name="Gallery" component={gallery} />
-        <Tab.Screen name="Message" component={message} />
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Gallery" component={Gallery} />
+        <Tab.Screen name="Message" component={Message} />
       </Tab.Navigator>
   );
 }

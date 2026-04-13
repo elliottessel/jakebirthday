@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
-export default function message() {
+export default function Message() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.emoji}>🎉</Text>
