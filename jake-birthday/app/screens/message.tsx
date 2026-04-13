@@ -3,14 +3,14 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 export default function Message() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.emoji}>🎉</Text>
-      <Text style={styles.heading}>A Message For You</Text>
+      <Text style={styles.heading}>A Message for my absolutely goated 22 year old day-one.</Text>
       <Text style={styles.body}>
-        Wishing you the most wonderful birthday filled with joy, laughter, and all the things that make you smile.
+        I know I said I don't want to reiterate some of that W friendslop, but here I am.
         {'\n\n'}
-        You are truly one of a kind, and the world is a better place with you in it.
+        I don't know what I would do without you in my life. You push to be a better person; I would probably be shite at giving gifts without you, but
+        instead I'm out here making apps. 
         {'\n\n'}
-        Here's to another amazing year ahead — Happy Birthday! 🥳
+        Genuinely, I dont know what I'm going to do next year. 
       </Text>
     </ScrollView>
   );

@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.emoji}>🎂</Text>
-      <Text style={styles.title}>Happy Birthday!</Text>
-      <Text style={styles.subtitle}>Tap the tabs below to explore</Text>
+      <Text style={styles.title}>JAKE BARUCH</Text>
+      <Text style={styles.subtitle}>birthday app</Text>
     </View>
   );
 }
