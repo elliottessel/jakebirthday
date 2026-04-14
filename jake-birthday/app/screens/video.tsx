@@ -12,7 +12,7 @@ export default function VideoScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>A Message For You 🎬</Text>
+      <Text style={styles.title}>Remember this</Text>
       {/* <VideoView
         player={player}
         style={styles.video}

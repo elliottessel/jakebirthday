@@ -1,11 +1,16 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import ConfettiCannon from 'react-native-confetti-cannon'
 import { useRef } from 'react';
 
 export default function Home() {
         const confettiRef = useRef<any>(null);
   return (
-    <View style={styles.container}>
+    
+      <ImageBackground
+      source={require('../../assets/images/IMG_0472.png')}
+      style={styles.container}
+      resizeMode="cover"
+      >
         <ConfettiCannon
         ref={confettiRef}
         count={150}
@@ -16,7 +21,8 @@ export default function Home() {
       <Text style={styles.emoji}>🎂</Text>
       <Text style={styles.title}>JAKE BARUCH</Text>
       <Text style={styles.subtitle}>birthday app</Text>
-    </View>
+      </ImageBackground>
+    
   );
 }
 
