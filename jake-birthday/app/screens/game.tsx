@@ -4,11 +4,76 @@ import { useState, useRef, useEffect } from 'react';
 const questions = [
   {
     id: '1',
+    question: 'What is the goat OP Prison server',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'AkumaMC',
+  },
+  {
+    id: '2',
+    question: 'What is the Best Movie of All Time',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Ambulance',
+  },
+  {
+    id: '3',
     question: 'Your question here?',
     options: ['Option A', 'Option B', 'Option C', 'Option D'],
     correct: 'Option A',
   },
-  // ...paste your 15 questions here
+  {
+    id: '4',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '5',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '6',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '7',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '8',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '9',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '10',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '11',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
+  {
+    id: '12',
+    question: 'Your question here?',
+    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    correct: 'Option A',
+  },
 ];
 
 const endMessages = [
