@@ -16,15 +16,15 @@ const questions = [
   },
   {
     id: '3',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    question: 'Which of these mobule games have we NOT played?',
+    options: ['Disco Zoo', 'Cookie Run', 'Battle Cats', 'Option D'],
     correct: 'Option A',
   },
   {
     id: '4',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
+    question: 'What is our favorite Effect',
+    options: ['Chud Effect', 'Gurt Effect', 'Coyote Effect', 'Sans Effect'],
+    correct: 'Coyote Effect',
   },
   {
     id: '5',
