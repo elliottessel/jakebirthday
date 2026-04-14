@@ -139,11 +139,6 @@ export default function GameScreen() {
 
   if (finished) {
     return (
-      <ImageBackground
-        source={require('../../assets/images/IMG_0472.png')}
-        style={styles.container}
-        resizeMode="cover"
-      >
         <View style={styles.overlay}>
           <Text style={styles.finishedEmoji}>🎂</Text>
           <Text style={styles.finishedScore}>{score} / {questions.length}</Text>
@@ -152,16 +147,10 @@ export default function GameScreen() {
             <Text style={styles.replayText}>Play Again</Text>
           </TouchableOpacity>
         </View>
-      </ImageBackground>
     );
   }
 
   return (
-    <ImageBackground
-      source={require('../../assets/images/IMG_0472.png')}
-      style={styles.container}
-      resizeMode="cover"
-    >
       <View style={styles.overlay}>
         <Text style={styles.progress}>{currentIndex + 1} / {questions.length}</Text>
         <Animated.View style={{ opacity: fadeAnim, width: '100%', alignItems: 'center' }}>
@@ -179,7 +168,6 @@ export default function GameScreen() {
         </Animated.View>
         <Text style={styles.score}>Score: {score}</Text>
       </View>
-    </ImageBackground>
   );
 }
 
