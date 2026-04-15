@@ -5,7 +5,7 @@ const questions = [
   {
     id: '1',
     question: 'What is the goat OP Prison server',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    options: ['ChudPrison', 'FNAFMc', 'AkumaMC', 'OPBread'],
     correct: 'AkumaMC',
   },
   {
@@ -16,9 +16,9 @@ const questions = [
   },
   {
     id: '3',
-    question: 'Which of these mobule games have we NOT played?',
-    options: ['Disco Zoo', 'Cookie Run', 'Battle Cats', 'Option D'],
-    correct: 'Option A',
+    question: 'Which of these mobile games have we NOT played?',
+    options: ['Disco Zoo', 'Cookie Run', 'Battle Cats', 'Brawl Stars'],
+    correct: 'Brawl Stars',
   },
   {
     id: '4',
@@ -28,31 +28,31 @@ const questions = [
   },
   {
     id: '5',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
+    question: 'Best FNAF Game?',
+    options: ['FNAF 3', 'Pizzaria Simulator', 'FNAF 4', 'FNAF 1'],
+    correct: 'Pizzaria Simulator',
   },
   {
     id: '6',
     question: 'Which of these modpacks have we NOT played?',
-    options: ['Stoneblock', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
+    options: ['Stoneblock', 'Skyfactory 3', 'Oceanblock', 'HololiveCraft'],
+    correct: 'HololiveCraft',
   },
   {
     id: '7',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
+    question: 'What is THE Jakelliot Soda?',
+    options: ['Diet Coke', 'Dr. Shasta', 'Purp', 'Bepis'],
+    correct: 'Dr. Shasta',
   },
   {
     id: '8',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
+    question: 'What is my Z Move?',
+    options: ['Cum in a Jar', 'Explode in a Tub', 'Splooge in a Boot', 'Jake in a Lake'],
+    correct: 'Cum in a Jar',
   },
   {
     id: '9',
-    question: 'Your question here?',
+    question: '',
     options: ['Option A', 'Option B', 'Option C', 'Option D'],
     correct: 'Option A',
   },
@@ -61,19 +61,7 @@ const questions = [
     question: 'Your question here?',
     options: ['Option A', 'Option B', 'Option C', 'Option D'],
     correct: 'Option A',
-  },
-  {
-    id: '11',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
-  },
-  {
-    id: '12',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
-  },
+  }
 ];
 
 const endMessages = [
