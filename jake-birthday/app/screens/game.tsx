@@ -11,7 +11,7 @@ const questions = [
   {
     id: '2',
     question: 'What is the Best Movie of All Time',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    options: ['Doctor Strange: MoM', 'Belle', 'Ambulance', 'Suzume'],
     correct: 'Ambulance',
   },
   {
@@ -34,8 +34,8 @@ const questions = [
   },
   {
     id: '6',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    question: 'Which of these modpacks have we NOT played?',
+    options: ['Stoneblock', 'Option B', 'Option C', 'Option D'],
     correct: 'Option A',
   },
   {
