@@ -4,6 +4,7 @@ import Home from './screens/home';
 import Gallery from './screens/gallery';
 import Message from './screens/message';
 import VideoScreen from './screens/video';
+import GameScreen from './screens/game';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
         <Tab.Screen name="Gallery" component={Gallery} />
         <Tab.Screen name="Message" component={Message} />
         <Tab.Screen name="Video" component={VideoScreen} />
+        <Tab.Screen name="Game" component={GameScreen} />
       </Tab.Navigator>
   );
 }

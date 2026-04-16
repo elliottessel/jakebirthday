@@ -46,29 +46,29 @@ const questions = [
   },
   {
     id: '8',
-    question: 'What is my Z Move?',
+    question: "What is Elliot's Z Move?",
     options: ['Cum in a Jar', 'Explode in a Tub', 'Splooge in a Boot', 'Jake in a Lake'],
     correct: 'Cum in a Jar',
   },
   {
     id: '9',
-    question: '',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
-    correct: 'Option A',
+    question: 'Which of these would Jake not eat?',
+    options: ['Oren Spaghetti', 'Tuna Melt', 'That Fuckass $20 Bagel', '100 Tomatos'],
+    correct: '100 Tomatos',
   },
   {
     id: '10',
-    question: 'Your question here?',
-    options: ['Option A', 'Option B', 'Option C', 'Option D'],
+    question: 'Who has the most goated friendship of all time?',
+    options: ['Jakelliot', 'Jakelliot', 'Jakelliot', 'Jakelliot'],
     correct: 'Option A',
   }
 ];
 
 const endMessages = [
-  { min: 0, max: 5, message: "Looks like someone needs to spend more time together! 😅" },
-  { min: 6, max: 10, message: "Not bad! You know them pretty well 😄" },
-  { min: 11, max: 13, message: "Impressive! You really know your stuff 🌟" },
-  { min: 14, max: 15, message: "Perfect score! You're basically the same person 🎉" },
+  { min: 0, max: 2, message: "You are trash." },
+  { min: 3, max: 5, message: "You are a chudsworth." },
+  { min: 6, max: 8, message: "You are goated." },
+  { min: 9, max: 10, message: "You are Jake Baruch." },
 ];
 
 export default function GameScreen() {
@@ -139,7 +139,7 @@ export default function GameScreen() {
   }
 
   return (
-      <View style={styles.overlay}>
+    <ImageBackground>
         <Text style={styles.progress}>{currentIndex + 1} / {questions.length}</Text>
         <Animated.View style={{ opacity: fadeAnim, width: '100%', alignItems: 'center' }}>
           <Text style={styles.question}>{current.question}</Text>
@@ -155,7 +155,7 @@ export default function GameScreen() {
           ))}
         </Animated.View>
         <Text style={styles.score}>Score: {score}</Text>
-      </View>
+      </ImageBackground>
   );
 }
 
