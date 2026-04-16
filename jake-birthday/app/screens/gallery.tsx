@@ -2,18 +2,18 @@ import { FlatList, Image, Dimensions, Modal, TouchableOpacity, View, StyleSheet 
 import { useState } from 'react';
 
 const photos = [
-        { id: '1', source: require('../../assets/images/IMG_0472.png') },
-        { id: '2', source: require('../../assets/images/IMG_0475.png') },
-        { id: '3', source: require('../../assets/images/IMG_0950.png') },
-        { id: '4', source: require('../../assets/images/IMG_1679.png') },
-        { id: '5', source: require('../../assets/images/IMG_1679.png') },
-        { id: '6', source: require('../../assets/images/IMG_2130.png') },
-        { id: '7', source: require('../../assets/images/IMG_2561.png') },
-        { id: '8', source: require('../../assets/images/IMG_4151.png') },
-        { id: '9', source: require('../../assets/images/IMG_5958.png') },
-        { id: '10', source: require('../../assets/images/IMG_5961.png') },
-        { id: '11', source: require('../../assets/images/IMG_7984.png') },
-        { id: '12', source: require('../../assets/images/IMG_9399.png') },
+        { id: '1', source: require('../../assets/images/jakeegg.png') },
+        { id: '2', source: require('../../assets/images/jakeella.png') },
+        { id: '3', source: require('../../assets/images/jakecrystal.png') },
+        { id: '4', source: require('../../assets/images/jakejapanbirthday.png') },
+        { id: '5', source: require('../../assets/images/jakeorb.png') },
+        { id: '6', source: require('../../assets/images/jakepickolas.png') },
+        { id: '7', source: require('../../assets/images/jakesing3.png') },
+        { id: '8', source: require('../../assets/images/jakecabo.png') },
+        { id: '9', source: require('../../assets/images/jakefishing.png') },
+        { id: '10', source: require('../../assets/images/jakefishing2.png') },
+        { id: '11', source: require('../../assets/images/jakecabo.png') },
+        { id: '12', source: require('../../assets/images/jakefishing.png') },
 ];
 
 const size = Dimensions.get('window').width / 2 - 6;

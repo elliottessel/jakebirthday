@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground, Image } from 'react-native';
 import ConfettiCannon from 'react-native-confetti-cannon'
 import { useRef } from 'react';
 
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     
       <ImageBackground
-      source={require('../../assets/images/IMG_0472.png')}
+      source={require('../../assets/images/jakefishing.png')}
       style={styles.container}
       resizeMode="cover"
       >
@@ -19,6 +19,10 @@ export default function Home() {
         fadeOut={true}
       />
       <Text style={styles.emoji}>🎂</Text>
+      <Image
+        source={require('../../assets/images/jakeflushed.png')}
+        style={{ width: 200, height: 200 }}
+      />
       <Text style={styles.title}>JAKE BARUCH</Text>
       <Text style={styles.subtitle}>birthday app</Text>
       </ImageBackground>
