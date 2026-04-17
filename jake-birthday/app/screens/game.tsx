@@ -60,7 +60,7 @@ const questions = [
     id: '10',
     question: 'Who has the most goated friendship of all time?',
     options: ['Jakelliot', 'Jakelliot', 'Jakelliot', 'Jakelliot'],
-    correct: 'Option A',
+    correct: 'Jakelliot',
   }
 ];
 
@@ -139,7 +139,11 @@ export default function GameScreen() {
   }
 
   return (
-    <ImageBackground>
+    <ImageBackground
+    source={require('../../assets/images/jaketriviabackground.png')}
+    style={styles.container}
+    resizeMode="cover"
+    >
         <Text style={styles.progress}>{currentIndex + 1} / {questions.length}</Text>
         <Animated.View style={{ opacity: fadeAnim, width: '100%', alignItems: 'center' }}>
           <Text style={styles.question}>{current.question}</Text>
@@ -160,7 +164,7 @@ export default function GameScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
+  container: { flex: 1, paddingTop: 160,},
   overlay: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.5)',
@@ -168,11 +172,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 24,
   },
-  progress: { color: '#fff', fontSize: 14, marginBottom: 16, opacity: 0.8 },
+  progress: { color: '#0', fontSize: 14, marginBottom: 16, opacity: 0.8, textAlign: 'center' },
   question: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#0',
     textAlign: 'center',
     marginBottom: 32,
     lineHeight: 30,
@@ -189,13 +193,13 @@ const styles = StyleSheet.create({
   correct: { backgroundColor: 'rgba(80,200,80,0.6)', borderColor: '#4caf50' },
   wrong: { backgroundColor: 'rgba(200,60,60,0.6)', borderColor: '#f44336' },
   dimmed: { opacity: 0.4 },
-  optionText: { color: '#fff', fontSize: 16, textAlign: 'center' },
-  score: { color: '#fff', fontSize: 14, marginTop: 24, opacity: 0.8 },
+  optionText: { color: '#0', fontSize: 16, textAlign: 'center' },
+  score: { color: '#0', fontSize: 14, marginTop: 24, opacity: 0.8, textAlign: 'center' },
   finishedEmoji: { fontSize: 72, marginBottom: 16 },
   finishedScore: { fontSize: 52, fontWeight: 'bold', color: '#fff', marginBottom: 12 },
   finishedMessage: { fontSize: 18, color: '#fff', textAlign: 'center', marginBottom: 32, lineHeight: 26 },
   replayButton: {
-    backgroundColor: '#d45f2e',
+    backgroundColor: '#1C7508',
     paddingHorizontal: 40,
     paddingVertical: 16,
     borderRadius: 30,

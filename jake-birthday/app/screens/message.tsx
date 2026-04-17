@@ -19,6 +19,6 @@ export default function Message() {
 const styles = StyleSheet.create({
   container: { flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: 32, backgroundColor: '#fff8f0' },
   emoji: { fontSize: 56, marginBottom: 16 },
-  heading: { fontSize: 26, fontWeight: 'bold', color: '#d45f2e', marginBottom: 20, textAlign: 'center' },
+  heading: { fontSize: 26, fontWeight: 'bold', color: '#1C7508', marginBottom: 20, textAlign: 'center' },
   body: { fontSize: 17, lineHeight: 28, color: '#444', textAlign: 'center' },
 });

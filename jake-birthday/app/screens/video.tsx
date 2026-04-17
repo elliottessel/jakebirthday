@@ -25,6 +25,6 @@ export default function VideoScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff8f0' },
-  title: { fontSize: 22, fontWeight: 'bold', color: '#d45f2e', marginBottom: 20 },
+  title: { fontSize: 22, fontWeight: 'bold', color: '#1C7508', marginBottom: 20 },
   video: { width: '100%', height: 300 },
 });
