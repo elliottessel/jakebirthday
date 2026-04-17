@@ -7,7 +7,7 @@ export default function Home() {
   return (
     
       <ImageBackground
-      source={require('../../assets/images/jakefishing.png')}
+      source={require('../../assets/images/jakeappbackground.png')}
       style={styles.container}
       resizeMode="cover"
       >
@@ -18,10 +18,9 @@ export default function Home() {
         autoStart={true}
         fadeOut={true}
       />
-      <Text style={styles.emoji}>🎂</Text>
       <Image
         source={require('../../assets/images/jakeflushed.png')}
-        style={{ width: 200, height: 200 }}
+        style={{ width: 180, height: 180 }}
       />
       <Text style={styles.title}>JAKE BARUCH</Text>
       <Text style={styles.subtitle}>birthday app</Text>
