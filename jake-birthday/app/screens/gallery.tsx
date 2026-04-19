@@ -12,8 +12,16 @@ const photos = [
         { id: '8', source: require('../../assets/images/jakecabo.png') },
         { id: '9', source: require('../../assets/images/jakefishing.png') },
         { id: '10', source: require('../../assets/images/jakefishing2.png') },
-        { id: '11', source: require('../../assets/images/jakecabo.png') },
-        { id: '12', source: require('../../assets/images/jakefishing.png') },
+        { id: '11', source: require('../../assets/images/jakeproposal.png') },
+        { id: '12', source: require('../../assets/images/jakeweed.png') },
+        { id: '13', source: require('../../assets/images/jake3D.png') },
+        { id: '14', source: require('../../assets/images/jakecolor.png') },
+        { id: '15', source: require('../../assets/images/jakelliot.png') },
+        { id: '16', source: require('../../assets/images/jakepumpkin.png') },
+        { id: '17', source: require('../../assets/images/jakesleeping.png') },
+        { id: '18', source: require('../../assets/images/jakeroomjapan.png') },
+        { id: '19', source: require('../../assets/images/jakewater.png') },
+        { id: '20', source: require('../../assets/images/jakefnaf.png') }
 ];
 
 const size = Dimensions.get('window').width / 2 - 6;
