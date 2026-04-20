@@ -7,10 +7,10 @@ export default function Message() {
       <Text style={styles.body}>
         I know I said I don't want to reiterate some of that W friendslop, but here I am.
         {'\n\n'}
-        I don't know what I would do without you in my life. You push to be a better person; I would probably be shite at giving gifts without you, but
+        I don't know what I would do without you in my life. You push me to be a better person; I would probably be shite at giving gifts without you, but
         instead I'm out here making apps. 
         {'\n\n'}
-        Genuinely, I dont know what I'm going to do next year. 
+        But anyway, I love you so much and I can't wait for another peak year for Jakelliot.
       </Text>
     </ScrollView>
   );

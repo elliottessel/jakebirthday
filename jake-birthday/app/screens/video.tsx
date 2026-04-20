@@ -1,25 +1,29 @@
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, ImageBackground } from 'react-native';
 import { useVideoPlayer, VideoView } from 'expo-video';
 
 export default function VideoScreen() {
-//   const player = useVideoPlayer(
-//     require('../../assets/videos/birthday.mp4'),
-//     (player) => {
-//       player.loop = false;
-//       player.play();
-//     }
-//   );
+  const player = useVideoPlayer(
+    require('../../assets/Jake Birthday.mp4'),
+    (player) => {
+      player.loop = false;
+      player.play();
+    }
+  );
 
   return (
-    <View style={styles.container}>
+    <ImageBackground
+    source={require('../../assets/images/videobacgkround.png')}
+    style={styles.container}
+    resizeMode="cover"
+    >
       <Text style={styles.title}>EVERYONE IS HERE!</Text>
-      {/* <VideoView
+      <VideoView
         player={player}
         style={styles.video}
         allowsFullscreen
         allowsPictureInPicture
-      /> */}
-    </View>
+      />
+    </ImageBackground>
   );
 }
 
