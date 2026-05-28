@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "jake-birthday",
-    "slug": "jake-birthday",
+    "slug": "jakebirthdayapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,7 +10,10 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.jakebirthday"
+      "bundleIdentifier": "com.anonymous.jakebirthday",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -46,6 +49,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7bdaa061-3330-4f4d-acef-aaf1c5af10c5"
+      }
+    },
+    "owner": "jakeappinc"
   }
 }
