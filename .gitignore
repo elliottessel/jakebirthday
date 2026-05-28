@@ -7,3 +7,4 @@ yarn-debug.log*
 yarn-error.log*
 .DS_Store
 jake-birthday/assets/Jake Birthday.mp4
+*.mp4

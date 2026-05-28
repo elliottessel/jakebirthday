@@ -3,7 +3,7 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 
 export default function VideoScreen() {
   const player = useVideoPlayer(
-    require('../../assets/Jake Birthday.mp4'),
+    require('../../assets/Jake-Birthday.mp4'),
     (player) => {
       player.loop = false;
       player.play();
